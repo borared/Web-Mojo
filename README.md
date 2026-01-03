@@ -1,16 +1,42 @@
-# React + Vite
+# 🏢 Web Mojo
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+**Web Mojo** is a **small start up company of my group** exclusively dedicated to **provide agency service to client** such as:
+-Web Development
+-Web Design
+-Poster Design
 
-Currently, two official plugins are available:
+This project is part of an **end-of-course final project Term 2**, designed to demonstrate skills in **web development and UI/UX design**.   
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Live Demo
+Check out the live version of the project here: [Web Mojo website domain](https://web-mojo.vercel.app/)
 
-## React Compiler
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## 🛠️ Technologies Used  
 
-## Expanding the ESLint configuration
+- **React.js** – For dynamic UI. 
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## ✨ Features  
+
+- **Elegant, UI/UX** with a **modern and responsive design**.  
+- **Detail of work that we've done by far**, including person work and collaboration work.
+- **Smooth animations and transitions** for a premium experience.  
+- **Navigation bar and responsive layout** for optimal usability on all devices.    
+
+## 🚀 Getting Started  
+### 🔧 Installation  
+1. **Clone the repository**  
+   ```sh
+   git clone https://github.com/borared/Web-Mojo.git
+   cd Web-Mojo
+   ```  
+
+2. **Open `index.html` in a browser**  
+
+## 📌 Team Member
+
+- **Red Bora**  
+- **[Sophat Panhaseth](https://github.com/Panha-SeTh)**
+
+## License
+
+This project is licensed under the [MIT License](LICENSE). 
