@@ -86,7 +86,7 @@ main {
   background-color: black;
 }
 #Hero {
-  background: url(./image/herobg.jpg) repeat center center;
+  background: url('https://res.cloudinary.com/dicrvjstp/image/upload/v1767519758/herobg_ejkdjh.jpg') repeat center center;
   background-size: cover;
   background-attachment: fixed;
 }
