@@ -10,7 +10,7 @@ export default function Features() {
       title: "User‑Centric",
       description: "We start with deep discovery and user research. Our designs are mapped out to create a seamless, intuitive experience that guides your visitors directly to conversion.",
       icon: "👥",
-      color: "from-blue-500 to-cyan-400",
+      color: "bg-blue-700",
       stats: ["+47%", "User Engagement", "↑"],
       image: "https://images.unsplash.com/photo-1552664730-d307ca884978?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
     },
@@ -19,7 +19,7 @@ export default function Features() {
       title: "Clean & Scalable",
       description: "Clean, scalable, and brand-aligned design. Every color, font, and layout decision is intentional, ensuring aesthetics meet functionality for a powerful brand presence.",
       icon: "⚡",
-      color: "from-purple-500 to-pink-500",
+      color: "bg-purple-600",
       stats: ["3x", "Faster Load Times", "⚡"],
       image: "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
     },
@@ -28,7 +28,7 @@ export default function Features() {
       title: "Flawless Mobile",
       description: "We build with modern, high-performance frameworks to deliver fast, robust, and mobile-first websites that look incredible and perform flawlessly on any device.",
       icon: "📱",
-      color: "from-green-500 to-emerald-400",
+      color: "bg-green-600",
       stats: ["99%", "Mobile Optimization", "✓"],
       image: "https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
     }
@@ -80,7 +80,7 @@ export default function Features() {
         {/* Header */}
         <div className="text-center mb-16">
           <div className="inline-block mb-4">
-            <span className="px-4 py-2 bg-gradient-to-r from-blue-600 to-purple-600 rounded-full text-sm font-semibold tracking-wider">
+            <span className="px-4 py-2 bg-blue-700 text-white rounded-full text-sm font-semibold tracking-wider">
               WHY CHOOSE US
             </span>
           </div>
@@ -103,7 +103,7 @@ export default function Features() {
               <button
                 key={feature.id}
                 onClick={() => setActiveFeature(index)}
-                className={`px-6 py-3 rounded-xl font-medium transition-all duration-300 ${
+                className={`hover:cursor-pointer px-6 py-3 rounded-xl font-medium transition-all duration-300 ${
                   activeFeature === index
                     ? `bg-gradient-to-r ${feature.color} text-white shadow-lg`
                     : "text-gray-400 hover:text-white"
@@ -198,12 +198,12 @@ export default function Features() {
               </div>
 
               {/* CTA Button */}
-              <button className="group relative px-8 py-4 bg-gradient-to-r from-gray-900 to-black rounded-xl border border-gray-800 hover:border-gray-600 transition-all duration-300 overflow-hidden">
+              <button className="group relative px-8 py-4 hover:cursor-pointer hover:bg-blue-700  rounded-xl border border-gray-700 hover:border-none transition-all duration-300 overflow-hidden">
                 <span className="relative z-10 text-lg font-semibold text-white">
                   Learn More About This Feature
                 </span>
-                <div className={`absolute inset-0 bg-gradient-to-r ${features[activeFeature].color} opacity-0 group-hover:opacity-100 transition-opacity duration-300`}></div>
-                <div className="absolute right-4 top-1/2 transform -translate-y-1/2 group-hover:translate-x-2 transition-transform duration-300">
+                <div className={`absolute inset-0  ${features[activeFeature].color} opacity-0 group-hover:opacity-100 transition-opacity duration-300`}></div>
+                <div className="text-white absolute right-3 top-1/2 transform -translate-y-1/2 group-hover:translate-x-2 transition-transform duration-300">
                   →
                 </div>
               </button>
@@ -273,8 +273,8 @@ export default function Features() {
         <div className="mt-20 text-center">
           <div className="inline-flex items-center gap-6 bg-gradient-to-r from-gray-900 to-black rounded-2xl p-2 pl-8 border border-gray-800">
             <span className="text-xl font-semibold text-white">Ready to elevate your digital presence?</span>
-            <button className="px-8 py-4 bg-gradient-to-r from-blue-600 to-purple-600 rounded-xl font-bold hover:shadow-xl hover:shadow-purple-500/25 transition-all duration-300 transform hover:-translate-y-1">
-              Start Your Project
+            <button className="px-8 py-4 text-white bg-blue-700 rounded-xl font-bold  hover:cursor-pointer transition-all duration-300 transform hover:-translate-y-1">
+              Build my project
             </button>
           </div>
         </div>

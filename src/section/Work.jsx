@@ -24,9 +24,17 @@ const Work = () => {
   });
   const naekDesRef = useRef(null);
   const naekDesInview = useInView(naekDesRef, { once: true, amount: 0.5 });
+  
+  const tosTripRef = useRef(null);
+  const tosTripInview = useInView(tosTripRef, {
+    once: true,
+    amount: 0.2, 
+  });
+  const tosTripDesRef = useRef(null);
+  const tosTripDesInview = useInView(tosTripDesRef, { once: true, amount: 0.5 });
 
   return (
-    <div className="w-full bg-white xl:h-705 h-765 rounded-t-4xl -mt-15 lg:h-935 md:h-850 sm:h-795 relative z-20">
+    <div className="w-full bg-white xl:h-910 h-765 rounded-t-4xl -mt-15 lg:h-935 md:h-850 sm:h-795 relative z-20">
       <div className="px-4 pt-15 lg:px-15">
         <h1
           className="text-4xl xl:text-6xl md:text-5xl lg:text-6xl"
@@ -326,6 +334,108 @@ const Work = () => {
         </div>
       </div>
 
+      <div className="px-4 pt-15 lg:px-15">
+        <div className="mt-5">
+          <hr />
+        </div>
+        <h1
+          className="text-3xl mt-7 xl:text-5xl whitespace-nowrap"
+          style={{
+            fontFamily: "Rosemartin",
+          }}
+        >
+          A travel planning platform
+        </h1>
+      </div>
+
+      <div className="flex gap-5 px-4 pt-5 lg:px-15">
+        <motion.div
+          ref={tosTripRef}
+          initial={{ opacity: 0, y: 80 }}
+          animate={tosTripInview ? { opacity: 1, y: 0 } : {}}
+          transition={{ duration: 0.7, ease: "easeOut" }}
+          className="grow-2 h-75 rounded-xl xl:h-150 md:h-155 lg:h-185 sm:h-125 hover:cursor-pointer"
+          id="MojoClothes"
+          style={{
+            backgroundColor: "#7C4E37",
+          }}
+        >
+          <video
+            src="https://res.cloudinary.com/dicrvjstp/video/upload/v1767537191/Screen_Recording_2026-01-04_213231_pp4x3w.mp4" // replace with your actual video URL
+            className="w-full h-full object-cover rounded-xl"
+            autoPlay
+            muted
+            loop
+          ></video>
+        </motion.div>
+
+        <motion.div
+          ref={tosTripDesRef}
+          initial={{ opacity: 0, y: 80 }}
+          animate={tosTripDesInview ? { opacity: 1, y: 0 } : {}}
+          transition={{ duration: 0.6, ease: "easeOut" }}
+          className="grow-0 h-150 rounded-xl p-8 w-100 hidden xl:block"
+          style={{
+            backgroundColor: "#000000",
+          }}
+        >
+          <div>
+            <h1 className="text-white text-3xl font-bold">TOSTRIP</h1>
+
+            <p className="text-white mt-15 qoute">
+              "From the start, it was clear that <br /> Web Mojo are true
+              masters <br />
+              of modern web development. <br /> Choosing Web Mojo was the
+              <br />
+              non-negotiable step to <br /> successfully launch Mojo <br />
+              Fashion."
+            </p>
+
+            <div className="mt-43">
+              <hr className="border-[#FFFF]" />
+            </div>
+
+            <div className="flex h-15 mt-5 gap-5">
+              <a
+                className="bg-white w-15 h-15 rounded-4xl"
+                id="profile2"
+                href="https://red-bora-portfolio.vercel.app/"
+                target="_blank"
+              ></a>
+              <div>
+                <p className="text-white mt-2">Mr.Red Bora (Founder)</p>
+                <p className="text-white">Head of design at TosTrip</p>
+              </div>
+            </div>
+          </div>
+        </motion.div>
+      </div>
+      <div className="lg:px-15 mt-5 xl:hidden px-4">
+        <div className="bg-[#273627] rounded-xl h-80 p-8 lg:h-65 md:h-70 sm:h-70">
+          <h1 className="text-white text-2xl font-bold">MOJO CLOTHES</h1>
+          <p className="text-white qoute mt-2">
+            "From the start, it was clear that Web Mojo are true masters of
+            modern web development. Choosing Web Mojo was the non-negotiable
+            step to successfully launch Mojo Fashion."
+          </p>
+          <hr className="mt-3 lg:mt-6 md:mt-6 sm:mt-6 border-[#FFF]" />
+          <div className="flex h-15 lg:mt-6 md:mt-5 sm:mt-5 mt-4 gap-2 ">
+            <a
+              href="https://red-bora-portfolio.vercel.app/"
+              target="_blank"
+              className="bg-white w-15 h-15 rounded-4xl"
+              id="profile2"
+            ></a>
+            <div>
+              <p className="text-white mt-2">Mr.Red Bora (Founder)</p>
+              <p className="text-white whitespace-nowrap">
+                Head of design at Mojo Clothes
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
       <div className="px-4 pt-15 sm:px-4 lg:px-15">
         <div className="mt-0">
           <hr />
@@ -349,7 +459,7 @@ const Work = () => {
             </p>
             <button
               className="mt-10 bg-black text-white w-55 h-15 text-xl md:w-50 md:h-15 md:text-xl sm:text-xl sm:w-50 sm:h-14 xl:w-52 xl:h-13 xl:text-[20]
-                 hover:bg-blue-800 transition-colors duration-300 hover:cursor-pointer"
+                 hover:bg-blue-700 transition-colors duration-300 hover:cursor-pointer"
             >
               View all projects
             </button>

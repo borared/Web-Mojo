@@ -6,7 +6,7 @@ const Purpose = () => {
   const purposeRef = useRef(null);
   const purposeInview = useInView(purposeRef, {
     once: true,
-    amount: 0.6, // best smooth scroll trigger
+    amount: 0.6, 
   });
    const navigate = useNavigate();
 
@@ -54,10 +54,10 @@ const Purpose = () => {
             <p className="text-2xl text-white sm:text-xl xl:text-4xl lg:text-3xl">
               and the innovative projects that define us.
             </p>
-            <div className="flex justify-center items-center view-services-container group">
+            <div className="flex justify-center items-center view-services-container group min-w-fit">
               <a
                 onClick={() => navigate("/fullservice")}
-                className="text-2xl text-white underline font-normal sm:text-xl xl:text-3xl
+                className="text-[18px] text-white underline font-normal sm:text-xl xl:text-2xl
                            hover:text-neutral-200 hover:cursor-pointer mt-10 "
               >
                 View all services

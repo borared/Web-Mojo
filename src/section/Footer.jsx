@@ -6,7 +6,7 @@ const Footer = () => {
   const navigate = useNavigate();
 
   return (
-    <footer className="bg-[#0e0937] text-white py-20 px-8 md:px-20 rounded-t-4xl relative z-10 h-290 md:h-screen sm:h-290">
+    <footer className="bg-[#0e0937] text-white py-20 px-8 md:px-20 rounded-t-4xl relative z-10 h-290 md:h-screen sm:h-290 xl:h-190">
       {/* Animated Logo */}
       <div className="text-4xl font-extrabold mb-6 relative overflow-hidden group w-fit">
         <a

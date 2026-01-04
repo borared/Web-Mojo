@@ -39,7 +39,7 @@ const Navbar = () => {
       <div className="px-3 xl:px-10 md:px-4 lg:px-10 relative overflow-hidden group cursor-pointer w-fit">
         <a href="#"
           onClick={() => navigate("/")}
-          className="text-xl sm:text-xl md:text-2xl xl:text-2xl block relative"
+          className="text-xl sm:text-xl md:text-2xl xl:text-[20px] block relative"
           style={{
             fontFamily: '"Stretch Pro", sans-serif',
           }}
@@ -47,7 +47,7 @@ const Navbar = () => {
           <span className="block transition-transform duration-500 group-hover:-translate-y-full">
             WEB.MOJOO
           </span>
-          <span className="block absolute text-[#3461d2]  left-0 top-full transition-transform duration-500 group-hover:-translate-y-full">
+          <span className="block absolute text-blue-700  left-0 top-full transition-transform duration-500 group-hover:-translate-y-full">
             WEB.MOJOO
           </span>
         </a>
@@ -61,13 +61,13 @@ const Navbar = () => {
         <div className="flex gap-10 xl:gap-20 hover:cursor-pointer mr-15">
           <a 
           onClick={() => navigate("/fullservice")}
-          className="text-xl link-underline hover:text-blue-500">
+          className="text-xl link-underline hover:text-blue-700">
             Service
           </a>
-          <a href="#" className="text-xl link-underline hover:text-blue-500">
+          <a href="#" className="text-xl link-underline hover:text-blue-700">
             Portfolio
           </a>
-          <a href="#" className="text-xl link-underline hover:text-blue-500">
+          <a href="#" className="text-xl link-underline hover:text-blue-700">
             About us
           </a>
         </div>
