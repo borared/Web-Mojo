@@ -1,12 +1,12 @@
 import React, { useEffect } from "react"; 
-import Navbar from "./section/Navbar.jsx";
-import Hero from "./section/Hero.jsx";
-import Purpose from "./section/Purpose.jsx";
-import Work from "./section/Work.jsx";
-import Differ from "./section/Differ.jsx";
-import Footer from "./section/Footer.jsx";
+import Hero from "./section/Home/Hero.jsx";
+import Purpose from "./section/Home/Purpose.jsx";
+import Work from "./section/Home/Work.jsx";
+import Differ from "./section/Home/Differ.jsx";
+import Footer from "./components/Footer.jsx";
 import { BrowserRouter, Routes, Route, useLocation } from "react-router-dom"; 
-import HeadService from "./section/HeadService.jsx";
+import HeadService from "./section/Service/HeadService.jsx";
+import Typeservice from "./section/Service/Typeservice.jsx";
 
 const ScrollReset = () => {
  const { pathname } = useLocation(); 
@@ -42,6 +42,7 @@ const App = () => {
           element={
             <>
               <HeadService />
+              <Typeservice />
               <section className="min-h-screen" />
               <section className="min-h-screen" />
             </>

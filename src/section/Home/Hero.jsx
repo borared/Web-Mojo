@@ -1,10 +1,12 @@
 import React from "react";
-import Navbar from "./Navbar";
+import Navbar from "../../components/Navbar";
 
 const Hero = () => {
   return (
     <section className="min-h-screen relative" id="Hero">
-      <div><Navbar/></div>
+      <div>
+        <Navbar />
+      </div>
       {/* Dark overlay */}
       <div id="darker-bg"></div>
 
@@ -31,7 +33,8 @@ const Hero = () => {
         </p>
         <p className="text-white text-2xl hidden md:block">
           We design and develop high-performance Webflow platforms <br />
-          that convert visitors into loyal customers, giving your brand the <br />
+          that convert visitors into loyal customers, giving your brand the{" "}
+          <br />
           authority it deserves.
         </p>
         <p className="text-white md:hidden sm:block text-1xl">

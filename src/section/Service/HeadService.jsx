@@ -2,7 +2,7 @@ import React from "react";
 import { DotLottieReact } from "@lottiefiles/dotlottie-react";
 import {motion} from "framer-motion";
 
-import Navbar from "./Navbar";
+import Navbar from "../../components/Navbar";
 const HeadService = () => {
   return (
     <div className="bg-[#090216] h-screen relative">

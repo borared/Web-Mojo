@@ -115,7 +115,7 @@ main {
   left: -100%;
   width: 200%;
   height: 100%;
-  background: rgb(74, 74, 248);
+  background: rgb(130, 49, 236);
   transform: translateX(0);
   transition: transform 0.6s ease;
   z-index: -1;
